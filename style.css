@@ -120,6 +120,11 @@ body {
     gap: 2rem;
     justify-content: center;
     font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .nav-item:hover {
+    cursor: pointer;
   }
 
   .supporting-text {
