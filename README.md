@@ -64,7 +64,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 ```
-git clone https://github.com/kwesiObuobi/Hello-Microverse.git
+git clone https://github.com/kwesiObuobi/portfolio-setup-and-mobile-first.git
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

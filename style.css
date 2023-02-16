@@ -1,3 +1,142 @@
+*,
+*::before,
+*::after {
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 body {
-  background: blue;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  color: #172b4d;
+}
+
+.site-wrapper {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-placeholder {
+  font-size: 1.25rem;
+  color: #172b4d;
+}
+
+.header-nav {
+  display: none;
+}
+
+.headline {
+  background-image: url("assets/header-illsutration-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.headline h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.supporting-text {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.break {
+  display: none;
+}
+
+.headline h1 span {
+  color: #21a870;
+}
+
+.social-icons {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  height: auto;
+  width: 2rem;
+  margin: 0 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.action {
+  justify-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 375px) {
+  .headline {
+    background-size: 100%;
+  }
+
+  .social-icons a:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo-placeholder,
+  .menu-icon {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+    width: 100vw;
+  }
+
+  .nav-items {
+    flex: 1;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .nav-item:hover {
+    cursor: pointer;
+  }
+
+  .supporting-text {
+    text-align: center;
+    margin-top: 5rem;
+    width: 60vw;
+    line-height: 2rem;
+  }
+
+  .social-icons {
+    margin-top: 3rem;
+  }
 }
