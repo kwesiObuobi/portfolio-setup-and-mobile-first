@@ -28,10 +28,15 @@ body {
   font-size: 1.25rem;
 }
 
+.header-nav {
+  display: none;
+}
+
 .headline {
   background-image: url("assets/header-illsutration-mobile.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  /* background-size: auto; */
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -48,6 +53,10 @@ body {
 .supporting-text {
   text-align: center;
   margin: 3rem auto;
+}
+
+.break {
+  display: none;
 }
 
 .headline h1 span {
@@ -83,3 +92,45 @@ body {
   width: 100%;
   text-align: center;
 }
+
+@media screen and (min-width: 375px) {
+  .headline {
+    background-size: 100%;
+  }
+
+  .social-icons a:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo-placeholder, .menu-icon {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+    width: 100vw;
+  }
+
+  .nav-items {
+    flex: 1;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .supporting-text {
+    text-align: center;
+    margin-top: 5rem;
+    width: 60vw;
+    line-height: 2rem;
+  }
+  
+  .social-icons {
+    margin-top: 3rem;
+  }
+}
+
+
