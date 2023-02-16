@@ -1,5 +1,6 @@
-
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   text-decoration: none;
   box-sizing: border-box;
   margin: 0;
@@ -7,9 +8,9 @@
 }
 
 body {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
-  color:  #172B4D;
+  color: #172b4d;
 }
 
 .site-wrapper {
@@ -36,7 +37,6 @@ body {
   background-image: url("assets/header-illsutration-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-size: auto; */
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -60,7 +60,7 @@ body {
 }
 
 .headline h1 span {
-  color:#21a870;
+  color: #21a870;
 }
 
 .social-icons {
@@ -70,7 +70,6 @@ body {
 }
 
 .social-icons a {
-  display: block;
   height: auto;
   width: 2rem;
   margin: 0 0.2rem;
@@ -104,7 +103,8 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .logo-placeholder, .menu-icon {
+  .logo-placeholder,
+  .menu-icon {
     display: none;
   }
 
@@ -133,10 +133,8 @@ body {
     width: 60vw;
     line-height: 2rem;
   }
-  
+
   .social-icons {
     margin-top: 3rem;
   }
 }
-
-
