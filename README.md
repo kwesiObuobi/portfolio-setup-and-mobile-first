@@ -43,6 +43,7 @@
 - **A figma design is parsed to create the UI**
 - **A mobile first approach to design**
 - **Uses images and backgrounds to enhance the site's look**
+- **CSS grid is also used to place items in the page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -8,6 +8,10 @@
   list-style: none;
 }
 
+li {
+  color: #3a4a42;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -93,6 +97,219 @@ body {
   width: 100%;
   text-align: center;
 }
+
+/*
+* RECENT WORKS
+*/
+
+.recent-works {
+  margin-top: 3rem;
+}
+
+.rw-header-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recent-works-header {
+  font-size: 2.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.recent-works-indicator {
+  height: 0.25rem;
+  width: 2.5rem;
+  margin-top: 1rem;
+}
+
+.recent-works-group {
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.recent-works-item {
+  border: 2px solid #d0d9d4;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.recent-works-item > * {
+  flex: 1 1 auto;
+}
+
+.img-placeholder {
+  height: 40vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #3a4a42;
+}
+
+.project-tags {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 2rem;
+}
+
+.tag {
+  width: auto;
+  background-color: #ebf0ee;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-weight: 500;
+}
+
+.project-action {
+  border-radius: 4px;
+  background: #36b37f;
+  padding: 0.75rem;
+  color: white;
+  font-size: 1.1rem;
+  margin: 1rem auto;
+}
+
+.project-action:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.project-action:active {
+  background-color: #008552;
+}
+
+/*
+* ABOUT ME
+*/
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(assets/about-me-right-top.png), url(assets/about-me-left-bottom.png);
+  background-position: top right, left bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.about-me-header {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+}
+
+.about-me-text {
+  text-align: center;
+  margin: 1rem auto;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #42526e;
+  line-height: 2rem;
+}
+
+.resume-btn {
+  background: #36b37f;
+  padding: 0.75rem;
+  color: white;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.resume-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.resume-btn:active {
+  background-color: #008552;
+}
+
+.about-me-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 3rem auto;
+  gap: 1rem;
+}
+
+.card-item {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebf0ee;
+  border-radius: 8px;
+  min-height: 52vh;
+}
+
+.ellipse {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto 3rem;
+}
+
+.card-item-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card-item-tags {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  column-gap: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.card-item-tags > * {
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 0.3rem 0.1rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #36b37e;
+}
+
+/*
+MEDIA QUERIES
+*/
 
 @media screen and (min-width: 375px) {
   .headline {
