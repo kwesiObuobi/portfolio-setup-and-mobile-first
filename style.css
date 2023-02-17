@@ -168,6 +168,10 @@ body {
   margin-top: 1rem;
 }
 
+.recent-works-group {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
 
 
