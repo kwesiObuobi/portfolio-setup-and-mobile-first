@@ -195,6 +195,11 @@ body {
 
 .project-action:hover {
   cursor: pointer;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.project-action:active {
+  background-color: #008552;
 }
 
 /*
@@ -241,6 +246,11 @@ body {
 
 .resume-btn:hover {
   cursor: pointer;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.resume-btn:active {
+  background-color: #008552;
 }
 
 .about-me-card {
