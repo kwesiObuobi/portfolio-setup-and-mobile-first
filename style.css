@@ -140,3 +140,36 @@ body {
     margin-top: 3rem;
   }
 }
+
+
+/*
+* RECENT WORKS
+*/
+
+.recent-works {
+  margin: 3rem auto;
+}
+
+.rw-header-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recent-works-header {
+  font-size: 2.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.recent-works-indicator {
+  height: 0.25rem;
+  width: 2.5rem;
+  margin-top: 1rem;
+}
+
+
+
+
+
+
