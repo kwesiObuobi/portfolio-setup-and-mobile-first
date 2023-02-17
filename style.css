@@ -8,6 +8,10 @@
   list-style: none;
 }
 
+li {
+  color: #3A4A42;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   font-style: normal;
