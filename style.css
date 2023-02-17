@@ -227,7 +227,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   margin: 3rem auto;
-  border: 1px solid red;
+  gap: 1rem;
 }
 
 .card-item {
@@ -238,7 +238,7 @@ body {
   justify-content: center;
   background-color: #ebf0ee;
   border-radius: 8px;
-  border: 1px solid black;
+  min-height: 52vh;
 }
 
 .ellipse {
