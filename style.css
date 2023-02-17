@@ -141,13 +141,12 @@ body {
   }
 }
 
-
 /*
 * RECENT WORKS
 */
 
 .recent-works {
-  margin: 3rem auto;
+  margin: 3rem auto 1rem;
 }
 
 .rw-header-group {
@@ -212,7 +211,8 @@ body {
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin: 1rem 2rem;
@@ -223,6 +223,7 @@ body {
   background-color: #ebf0ee;
   border-radius: 4px;
   padding: 0.5rem;
+  font-weight: 500;
 }
 
 .project-action {
@@ -234,3 +235,37 @@ body {
   margin: 1rem auto;
 }
 
+/*
+* ABOUT ME
+*/
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-header {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.about-me-text {
+  text-align: center;
+  margin: 1rem auto;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.resume-btn {
+  background: #36b37f;
+  padding: 0.75rem;
+  color: white;
+  border-radius: 4px;
+}
