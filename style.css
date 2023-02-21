@@ -313,6 +313,7 @@ CONTACT SECTION
   font-weight: 700;
   line-height: 52px;
   margin: 1rem auto 2.5rem;
+  color: #172b4d;
 }
 
 .form-group {
@@ -330,10 +331,17 @@ CONTACT SECTION
 
 .form-input, .form-message {
   font-size: 15px;
+  font-weight: 400;
   padding: 16px;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
   width: 100%;
+  color: #6b778c;
+}
+
+.form-message {
+  border: 1px solid #60c095;
+  color: #091E42;
 }
 
 .form-control-btn {
