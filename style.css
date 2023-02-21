@@ -140,7 +140,7 @@ body {
   height: auto;
 }
 
-.recent-works-item > * {
+.recent-works-item>* {
   flex: 1 1 auto;
 }
 
@@ -282,7 +282,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.card-item-tags > * {
+.card-item-tags>* {
   background-color: white;
   padding: 12px;
   border-radius: 8px;
@@ -296,8 +296,41 @@ body {
 CONTACT SECTION
 */
 
-.contact-section {
-  
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(assets/contact-background.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10%;
+}
+
+.contact-form h2 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.form-input {
+  font-size: 15px;
+  padding: 16px;
+  border: 1px solid #D0D9D4;
+  border-radius: 4px;
+}
+
+.form-message {
+  font-size: 15px;
+  padding: 16px;
+  border: 1px solid #D0D9D4;
+  border-radius: 4px;
 }
 
 /*
@@ -320,6 +353,7 @@ MEDIA QUERIES
 }
 
 @media screen and (min-width: 768px) {
+
   .logo-placeholder,
   .menu-icon {
     display: none;
