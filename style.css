@@ -184,16 +184,19 @@ body {
   font-weight: 500;
 }
 
-.project-action {
+.btn {
   border-radius: 4px;
   background: #36b37f;
   padding: 0.75rem;
   color: white;
   font-size: 1.1rem;
+}
+
+.project-action {
   margin: 1rem auto;
 }
 
-.project-action:active {
+.btn:active {
   background-color: #008552;
 }
 
@@ -232,15 +235,7 @@ body {
 }
 
 .resume-btn {
-  background: #36b37f;
-  padding: 0.75rem;
-  color: white;
-  border-radius: 4px;
   margin-bottom: 2rem;
-}
-
-.resume-btn:active {
-  background-color: #008552;
 }
 
 .about-me-card {
@@ -310,12 +305,7 @@ MEDIA QUERIES
     cursor: pointer;
   }
 
-  .project-action:hover {
-    cursor: pointer;
-    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-  }
-
-  .resume-btn:hover {
+  .btn:hover {
     cursor: pointer;
     box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   }
