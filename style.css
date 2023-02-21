@@ -346,12 +346,12 @@ CONTACT SECTION
 
 .form-control-btn {
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .form-btn {
   border: 1px solid #008552;
   outline: none;
-  margin-bottom: 2rem;
 }
 
 /*
