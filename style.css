@@ -99,7 +99,7 @@ body {
 }
 
 /*
-* RECENT WORKS
+* RECENT WORKS / PROJECTS
 */
 
 .recent-works {
@@ -193,11 +193,6 @@ body {
   margin: 1rem auto;
 }
 
-.project-action:hover {
-  cursor: pointer;
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-}
-
 .project-action:active {
   background-color: #008552;
 }
@@ -242,11 +237,6 @@ body {
   color: white;
   border-radius: 4px;
   margin-bottom: 2rem;
-}
-
-.resume-btn:hover {
-  cursor: pointer;
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .resume-btn:active {
@@ -318,6 +308,16 @@ MEDIA QUERIES
 
   .social-icons a:hover {
     cursor: pointer;
+  }
+
+  .project-action:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  }
+
+  .resume-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   }
 }
 
