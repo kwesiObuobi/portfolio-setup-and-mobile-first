@@ -12,7 +12,9 @@ li {
   color: #3a4a42;
 }
 
-body {
+body,
+input[placeholder],
+textarea[placeholder] {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   color: #172b4d;
@@ -305,32 +307,43 @@ CONTACT SECTION
   background-position: bottom right;
 }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 10%;
-}
-
 .contact-form h2 {
   font-size: 40px;
   text-align: center;
   font-weight: 700;
   line-height: 52px;
+  margin: 1rem auto 2.5rem;
 }
 
-.form-input {
-  font-size: 15px;
-  padding: 16px;
-  border: 1px solid #D0D9D4;
-  border-radius: 4px;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  align-items: center;
 }
 
-.form-message {
+.form-control {
+  display: block;
+  width: 100%;
+}
+
+.form-input, .form-message {
   font-size: 15px;
   padding: 16px;
-  border: 1px solid #D0D9D4;
+  border: 1px solid #d0d9d4;
   border-radius: 4px;
+  width: 100%;
+}
+
+.form-control-btn {
+  text-align: center;
+}
+
+.form-btn {
+  border: 1px solid #008552;
+  outline: none;
+  margin-bottom: 2rem;
 }
 
 /*
