@@ -12,7 +12,9 @@ li {
   color: #3a4a42;
 }
 
-body {
+body,
+input[placeholder],
+textarea[placeholder] {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   color: #172b4d;
@@ -290,6 +292,84 @@ body {
   font-weight: 600;
   font-size: 0.75rem;
   color: #36b37e;
+}
+
+/*
+CONTACT SECTION
+*/
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(assets/contact-background.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.contact-form h2 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 52px;
+  margin: 1rem auto 2.5rem;
+  color: #172b4d;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  align-items: center;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+}
+
+.form-input,
+.form-message {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 16px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  width: 100%;
+  color: #6b778c;
+}
+
+.form-message {
+  border: 1px solid #60c095;
+  color: #091e42;
+}
+
+.form-control-btn {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.form-btn {
+  border: 1px solid #008552;
+  outline: none;
+}
+
+/*
+FOOTER SECTION
+*/
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  font-size: 1.25rem;
+}
+
+.footer-email {
+  color: #42526e;
+  margin-bottom: 10rem;
 }
 
 /*
