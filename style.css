@@ -142,7 +142,7 @@ textarea[placeholder] {
   height: auto;
 }
 
-.recent-works-item>* {
+.recent-works-item > * {
   flex: 1 1 auto;
 }
 
@@ -284,7 +284,7 @@ textarea[placeholder] {
   margin-bottom: 1rem;
 }
 
-.card-item-tags>* {
+.card-item-tags > * {
   background-color: white;
   padding: 12px;
   border-radius: 8px;
@@ -294,7 +294,7 @@ textarea[placeholder] {
   color: #36b37e;
 }
 
-/* 
+/*
 CONTACT SECTION
 */
 
@@ -329,7 +329,8 @@ CONTACT SECTION
   width: 100%;
 }
 
-.form-input, .form-message {
+.form-input,
+.form-message {
   font-size: 15px;
   font-weight: 400;
   padding: 16px;
@@ -341,7 +342,7 @@ CONTACT SECTION
 
 .form-message {
   border: 1px solid #60c095;
-  color: #091E42;
+  color: #091e42;
 }
 
 .form-control-btn {
@@ -391,7 +392,6 @@ MEDIA QUERIES
 }
 
 @media screen and (min-width: 768px) {
-
   .logo-placeholder,
   .menu-icon {
     display: none;
