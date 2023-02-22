@@ -120,6 +120,10 @@ textarea[placeholder] {
   width: 100%;
 }
 
+.recent-works-header span {
+  display: block;
+}
+
 .recent-works-indicator {
   height: 0.25rem;
   width: 2.5rem;
@@ -450,10 +454,26 @@ MEDIA QUERIES
   /*
   RECENT WORKS (DESKTOP)
   */
+
+  .rw-header-group {
+    margin-top: 6rem;
+  }
+
+  .recent-works-header span {
+    display: inline;
+  }
+  
+  .recent-works-indicator {
+    display: none;
+  }
   
   .recent-works-group {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 1rem;
+  }
+
+  .tag {
+    font-size: 12px;
   }
 
   /*
@@ -486,7 +506,7 @@ MEDIA QUERIES
     align-items: flex-start;
     gap: 1rem;
     margin-top: 3rem;
-    padding: 0 3rem 0;
+    padding: 0 6rem 0;
     background-image: url(assets/desktop/contact-form-left-most.png), url(assets/desktop/contact-form-left-next.png), url(assets/contact-background.svg);
     background-position: bottom left, bottom 20% left 30%, bottom right;
     padding-bottom: 6rem; /* to create a space before the background is shown */
@@ -531,6 +551,6 @@ MEDIA QUERIES
 
   .recent-works-group {
     grid-template-columns: repeat(3, 1fr);
-    padding: 0 4rem 0;
+    padding: 0 6rem 0;
   }
 }
