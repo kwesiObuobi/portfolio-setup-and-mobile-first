@@ -266,6 +266,7 @@ textarea[placeholder] {
   justify-content: center;
   align-items: center;
   margin: 2rem auto 3rem;
+  box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
 }
 
 .card-item-title {
@@ -469,6 +470,10 @@ MEDIA QUERIES
 
   .card-item {
     width: auto;
+  }
+
+  .card-item-tags {
+    width: 80%;
   }
 
   /*
