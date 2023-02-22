@@ -298,12 +298,12 @@ textarea[placeholder] {
 CONTACT SECTION
 */
 
-.contact-form {
+.contact-form {background-image: url(assets/contact-background.svg);
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(assets/contact-background.svg);
-  background-repeat: no-repeat;
+  
   background-position: bottom right;
 }
 
@@ -457,9 +457,50 @@ MEDIA QUERIES
   /*
   ABOUT ME (DESKTOP)
   */
-  
+
   .about-me-text {
     width: 60%;
+  }
+
+  .about-me-card {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 4rem 0;
+  }
+
+  .card-item {
+    width: auto;
+  }
+
+  /*
+  CONTACT FORM (DESKTOP)
+  */
+
+  .contact-form {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding: 0 3rem 0;
+    background-image: url(assets/desktop/contact-form-left-most.png), url(assets/desktop/contact-form-left-next.png), url(assets/contact-background.svg);
+    background-position: bottom left, bottom 20% left 30%, bottom right;
+    padding-bottom: 6rem; /* to create a space before the background is shown */
+  }
+
+  .contact-form > * {
+    flex: 1;
+  }
+
+  .contact-form h2 {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+  .form-message {
+    border: 1px solid #60c095;
+  }
+
+  .form-control-btn {
+    text-align: left;
   }
 }
 
