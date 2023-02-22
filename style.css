@@ -392,6 +392,10 @@ MEDIA QUERIES
 }
 
 @media screen and (min-width: 768px) {
+  /*
+  HEADER AND HEADLINE (DESKTOP)
+  */
+
   .logo-placeholder,
   .menu-icon {
     display: none;
@@ -448,7 +452,14 @@ MEDIA QUERIES
   .recent-works-group {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    /* padding: 0 1rem 0; */
+  }
+
+  /*
+  ABOUT ME (DESKTOP)
+  */
+  
+  .about-me-text {
+    width: 60%;
   }
 }
 
