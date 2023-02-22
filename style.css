@@ -67,7 +67,7 @@ textarea[placeholder] {
   display: none;
 }
 
-.headline h1 span {
+.headline-green {
   color: #21a870;
 }
 
@@ -118,6 +118,10 @@ textarea[placeholder] {
   font-size: 2.5rem;
   text-align: center;
   width: 100%;
+}
+
+.recent-works-header span {
+  display: block;
 }
 
 .recent-works-indicator {
@@ -252,10 +256,10 @@ textarea[placeholder] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   background-color: #ebf0ee;
   border-radius: 8px;
-  min-height: 52vh;
+  height: auto;
 }
 
 .ellipse {
@@ -266,6 +270,7 @@ textarea[placeholder] {
   justify-content: center;
   align-items: center;
   margin: 2rem auto 3rem;
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
 }
 
 .card-item-title {
@@ -299,11 +304,11 @@ CONTACT SECTION
 */
 
 .contact-form {
+  background-image: url(assets/contact-background.svg);
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(assets/contact-background.svg);
-  background-repeat: no-repeat;
   background-position: bottom right;
 }
 
@@ -392,6 +397,10 @@ MEDIA QUERIES
 }
 
 @media screen and (min-width: 768px) {
+  /*
+  HEADER AND HEADLINE (DESKTOP)
+  */
+
   .logo-placeholder,
   .menu-icon {
     display: none;
@@ -416,14 +425,132 @@ MEDIA QUERIES
     cursor: pointer;
   }
 
+  .headline {
+    background-image: none;
+  }
+
+  .header-and-headline-box {
+    background-image: url(assets/desktop/Header-llustration-desktop.png);
+    background-size: cover;
+    padding-bottom: 10rem;
+  }
+
   .supporting-text {
     text-align: center;
-    margin-top: 5rem;
-    width: 60vw;
+    margin: 1.5rem auto 2.125rem;
+    width: 50vw;
     line-height: 2rem;
   }
 
   .social-icons {
+    margin-top: 0;
+  }
+
+  .action {
+    bottom: 23%;
+  }
+
+  /*
+  RECENT WORKS (DESKTOP)
+  */
+
+  .rw-header-group {
+    margin-top: 6rem;
+  }
+
+  .recent-works-header span {
+    display: inline;
+  }
+
+  .recent-works-indicator {
+    display: none;
+  }
+
+  .recent-works-group {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0 4rem 0;
+  }
+
+  .tag {
+    font-size: 12px;
+  }
+
+  /*
+  ABOUT ME (DESKTOP)
+  */
+
+  .about-me-text {
+    width: 60%;
+  }
+
+  .about-me-card {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 4rem 0;
+  }
+
+  .card-item {
+    width: auto;
+  }
+
+  .card-item-tags {
+    width: 80%;
+  }
+
+  /*
+  CONTACT FORM (DESKTOP)
+  */
+
+  .contact-form {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
     margin-top: 3rem;
+    padding: 0 6rem 0;
+    background-image: url(assets/desktop/contact-form-left-most.png), url(assets/desktop/contact-form-left-next.png), url(assets/contact-background.svg);
+    background-position: bottom left, bottom 20% left 30%, bottom right;
+    padding-bottom: 6rem; /* to create a space before the background is shown */
+  }
+
+  .contact-form > * {
+    flex: 1;
+  }
+
+  .contact-form h2 {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+  .form-message {
+    border: 1px solid #60c095;
+  }
+
+  .form-control-btn {
+    text-align: left;
+  }
+
+  /*
+  FOOTER (DESKTOP)
+  */
+
+  .footer-section {
+    margin-top: 5rem;
+    border-top: 1px solid #dfe1e6;
+    padding-top: 1rem;
+  }
+
+  .footer-email {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .img-placeholder {
+    height: 30vh;
+  }
+
+  .recent-works-group {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 6rem 0;
   }
 }
