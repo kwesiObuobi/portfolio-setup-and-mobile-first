@@ -502,6 +502,20 @@ MEDIA QUERIES
   .form-control-btn {
     text-align: left;
   }
+
+  /*
+  FOOTER (DESKTOP)
+  */
+
+  .footer-section {
+    margin-top: 5rem;
+    border-top: 1px solid #dfe1e6;
+    padding-top: 1rem;
+  }
+
+  .footer-email {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1024px) {
