@@ -440,4 +440,25 @@ MEDIA QUERIES
   .action {
     bottom: 23%;
   }
+
+  /*
+  RECENT WORKS (DESKTOP)
+  */
+  
+  .recent-works-group {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    /* padding: 0 1rem 0; */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .img-placeholder {
+    height: 30vh;
+  }
+
+  .recent-works-group {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 4rem 0;
+  }
 }
