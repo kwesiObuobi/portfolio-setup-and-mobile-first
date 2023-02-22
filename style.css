@@ -427,12 +427,12 @@ MEDIA QUERIES
 
   .supporting-text {
     text-align: center;
-    margin-top: 5rem;
+    margin: 1.5rem auto 2.125rem;
     width: 60vw;
     line-height: 2rem;
   }
 
   .social-icons {
-    margin-top: 3rem;
+    margin-top: 0;
   }
 }
