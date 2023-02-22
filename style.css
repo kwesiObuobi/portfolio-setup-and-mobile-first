@@ -423,6 +423,7 @@ MEDIA QUERIES
   .header-and-headline-box {
     background-image: url(assets/desktop/Header-llustration-desktop.png);
     background-size: cover;
+    padding-bottom: 10rem;
   }
 
   .supporting-text {
@@ -434,5 +435,9 @@ MEDIA QUERIES
 
   .social-icons {
     margin-top: 0;
+  }
+
+  .action {
+    bottom: 23%;
   }
 }
