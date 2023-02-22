@@ -67,7 +67,7 @@ textarea[placeholder] {
   display: none;
 }
 
-.headline h1 span {
+.headline-green {
   color: #21a870;
 }
 
@@ -259,7 +259,6 @@ textarea[placeholder] {
   justify-content: start;
   background-color: #ebf0ee;
   border-radius: 8px;
-  /* min-height: 48vh; */
   height: auto;
 }
 
@@ -271,7 +270,7 @@ textarea[placeholder] {
   justify-content: center;
   align-items: center;
   margin: 2rem auto 3rem;
-  box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
 }
 
 .card-item-title {
@@ -304,12 +303,12 @@ textarea[placeholder] {
 CONTACT SECTION
 */
 
-.contact-form {background-image: url(assets/contact-background.svg);
+.contact-form {
+  background-image: url(assets/contact-background.svg);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
   background-position: bottom right;
 }
 
@@ -462,11 +461,11 @@ MEDIA QUERIES
   .recent-works-header span {
     display: inline;
   }
-  
+
   .recent-works-indicator {
     display: none;
   }
-  
+
   .recent-works-group {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
