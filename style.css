@@ -416,6 +416,15 @@ MEDIA QUERIES
     cursor: pointer;
   }
 
+  .headline {
+    background-image: none;
+  }
+
+  .header-and-headline-box {
+    background-image: url(assets/desktop/Header-llustration-desktop.png);
+    background-size: cover;
+  }
+
   .supporting-text {
     text-align: center;
     margin-top: 5rem;
