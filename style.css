@@ -439,7 +439,7 @@ MEDIA QUERIES
   .supporting-text {
     text-align: center;
     margin: 1.5rem auto 2.125rem;
-    width: 60vw;
+    width: 50vw;
     line-height: 2rem;
   }
 
@@ -470,6 +470,7 @@ MEDIA QUERIES
   .recent-works-group {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    padding: 0 4rem 0;
   }
 
   .tag {
