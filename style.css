@@ -467,6 +467,7 @@ MEDIA QUERIES
   .recent-works-item {
     transition: transform 0.5s ease-out;
   }
+
   .recent-works-item:hover {
     transform: scale(1.03);
   }
