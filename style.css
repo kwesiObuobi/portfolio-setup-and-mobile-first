@@ -401,6 +401,10 @@ MEDIA QUERIES
   HEADER AND HEADLINE (DESKTOP)
   */
 
+  .btn {
+    transition: all 0.5s ease-in-out;
+  }
+
   .logo-placeholder,
   .menu-icon {
     display: none;
@@ -456,6 +460,16 @@ MEDIA QUERIES
 
   .rw-header-group {
     margin-top: 6rem;
+  }
+
+  /* transition */
+
+  .recent-works-item {
+    transition: transform 0.5s ease-out;
+  }
+
+  .recent-works-item:hover {
+    transform: scale(1.03);
   }
 
   .recent-works-header span {
