@@ -50,7 +50,7 @@
 
 <!-- Live Demo -->
 
-## 🛠 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Check out the live demo from this link](https://kwesiobuobi.github.io/portfolio-setup-and-mobile-first/)
 <br/>
