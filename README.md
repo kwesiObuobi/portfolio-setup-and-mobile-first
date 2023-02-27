@@ -8,6 +8,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -46,6 +47,13 @@
 - **CSS grid is also used to place items in the page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Live Demo -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Check out the live demo from this link](https://kwesiobuobi.github.io/portfolio-setup-and-mobile-first/)
+<br/>
 
 
 <!-- GETTING STARTED -->
