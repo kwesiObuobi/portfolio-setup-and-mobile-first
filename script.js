@@ -3,6 +3,8 @@ function closeMenu() {
     document.body.style.overflow = 'scroll';
 }
 
+closeMenu();
+
 let menuIcon = document.querySelector('.menu-icon');
 
 menuIcon.addEventListener('click', function() {
