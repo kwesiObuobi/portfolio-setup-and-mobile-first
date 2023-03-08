@@ -40,6 +40,7 @@ textarea[placeholder] {
 /*
 MOBILE NAV
 */
+
 .mobile-nav-menu {
   background: white;
   display: none;
@@ -134,6 +135,213 @@ END MOBILE NAV
   width: 100%;
   text-align: center;
 }
+
+/*
+* MODAL
+*/
+
+body {
+  overflow: hidden;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  min-height: 100%;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  overflow: hidden;
+  gap: 1rem;
+  background: darkgrey;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.94;
+  backdrop-filter: blur(10px);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 15;
+  width: 95%;
+  height: 98%;
+  padding: 1rem;
+  background-color: #fff;
+  overflow: scroll;
+  border-radius: 8px;
+}
+
+.close-desktop-modal {
+  display: none;
+}
+
+.modal-img-box {
+  position: relative;
+}
+
+.modal-featured-img {
+  width: 100%;
+}
+
+.modal-close-btn {
+  position: absolute;
+  right: 1.2rem;
+  top: 1.2rem;
+}
+
+.modal-project-title {
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+}
+
+.modal-tags {
+  display: flex;
+  gap: 0.3rem;
+  margin: 0.5rem 0;
+}
+
+.modal-tag {
+  background: #ebf0ee;
+  padding: 0.3rem;
+  border-radius: 4px;
+  color: #3a4a42;
+}
+
+.modal-top-btn-group {
+  display: none;
+}
+
+.modal-top-btn-group li a,
+.modal-btn-group li a {
+  color: white;
+}
+
+.modal-primary-text {
+  font-size: 16px;
+}
+
+.modal-btn-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.modal-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+  flex: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-container {
+    background: darkgrey;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.94;
+    backdrop-filter: blur(10px);
+  }
+
+  .modal-content {
+    width: 90%;
+    height: 90%;
+    overflow: auto;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .close-desktop-modal {
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    align-self: flex-end;
+  }
+
+  .modal-close-btn {
+    display: none;
+  }
+
+  .modal-img-box {
+    height: 60%;
+  }
+
+  .modal-project-title {
+    font-size: 28px;
+    color: #172b4d;
+  }
+
+  .modal-featured-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .modal-h3-skills-and-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .modal-h3-and-skills {
+    flex: 2;
+  }
+
+  .modal-top-btn-group {
+    flex: 1;
+    display: flex;
+    height: 30%;
+    width: 100%;
+    gap: 0.2rem;
+  }
+
+  .modal-top-btn-group > * {
+    flex: 1;
+  }
+
+  .modal-top-btn-group li {
+    display: flex;
+    gap: 0.3rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .top-modal-btn a {
+    font-size: 11px;
+  }
+
+  .modal-top-btn-icon {
+    height: 200%;
+  }
+
+  .modal-btn-group {
+    display: none;
+  }
+
+  .modal-tags {
+    margin: 1rem 0;
+  }
+
+  .modal-tags li {
+    font-size: 12px;
+    background: #ebecf0;
+  }
+
+  .modal-primary-text {
+    font-size: 16px;
+  }
+}
+
+/*
+* END MODAL
+*/
 
 /*
 * RECENT WORKS / PROJECTS
