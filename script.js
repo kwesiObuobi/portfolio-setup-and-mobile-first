@@ -191,3 +191,21 @@ form.addEventListener('submit', (e) => {
         displayError(true);
     }
 })
+
+// LOCAL STORAGE
+const data = JSON.parse(localStorage.getItem('formData')) || {
+    name: '',
+    email: '',
+    message: ''
+};
+
+const saveFormData = (key, value) => {
+    data[key] = value;
+    localStorage.setItem('formData', JSON.stringify(data));
+};
+
+const username = form.elements['full-name'];
+username.value = data.name;
+username.addEventListener('keyup', (e) => {
+    saveFormData('name', e.target.value);
+})
