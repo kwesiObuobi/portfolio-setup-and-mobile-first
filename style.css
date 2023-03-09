@@ -603,6 +603,16 @@ CONTACT SECTION
   outline: none;
 }
 
+.error {
+  display: none;
+  margin-top: 0.3rem;
+  color: red;
+}
+
+.error-border {
+  box-shadow: 0 0 1px 1px red;
+}
+
 /*
 FOOTER SECTION
 */
