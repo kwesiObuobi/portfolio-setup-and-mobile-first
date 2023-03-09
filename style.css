@@ -603,10 +603,6 @@ CONTACT SECTION
   outline: none;
 }
 
-/*
-ERROR CODE GOES HERE
-*/
-
 .error {
   display: none;
   margin-top: 0.3rem;
