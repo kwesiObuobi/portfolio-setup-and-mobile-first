@@ -209,3 +209,15 @@ username.value = data.name;
 username.addEventListener('keyup', (e) => {
     saveFormData('name', e.target.value);
 })
+
+const formEmail = form.elements['email'];
+formEmail.value = data.email;
+formEmail.addEventListener('keyup', (e) => {
+    saveFormData('email', e.target.value);
+})
+
+const formMessage = form.elements['form-message'];
+formMessage.value = data.message;
+formMessage.addEventListener('keyup', (e) => {
+    saveFormData('message', e.target.value);
+})
