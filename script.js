@@ -162,3 +162,32 @@ function closeModal() {
 }
 
 closeModal();
+
+// FORM VALIDATION
+
+const form = document.querySelector('form');
+const emailField = form.elements['email'];
+const error = document.querySelector('.error');
+
+const displayError = (show) => {
+    if (show) {
+        error.style.display = 'block';
+        error.innerHTML = 'Email must be in lowercase';
+        emailField.classList.add('error-border');
+    } else {
+        error.style.display = 'none';
+        error.innerHTML = '';
+        emailField.classList.remove('error-border');
+    }
+}
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const validEmail = emailField.value === emailField.value.toLowerCase();
+
+    if (validEmail) {
+        form.submit();
+    } else {
+        displayError(true);
+    }
+})
